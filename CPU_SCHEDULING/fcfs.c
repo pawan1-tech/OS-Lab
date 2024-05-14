@@ -31,7 +31,7 @@ void findavgTime(int processes[], int n, int bt[], int at[]) {
     for (int i = 0; i < n ; i++) {
         total_wt = total_wt + wt[i];
         total_tat = total_tat + tat[i];
-        printf(" %d\t\t\t%d\t\t\t%d\t\t\t\t%d\t\t\t\t%d\n",i+1,bt[i],at[i],wt[i],tat[i]);
+        printf(" %d \t\t %d \t %d \t\t  %d  \t\t  %d\n",i+1,bt[i],at[i],wt[i],tat[i]);
     }
 
     printf("Average waiting time = %.2f\n",(float)total_wt / (float)n);

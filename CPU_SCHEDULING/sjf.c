@@ -9,7 +9,7 @@ void swap(int* a, int* b) {
 }
 
 void sortProcessByBurstTime(int n, int burstTime[], int process[]) {
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
             if (burstTime[j] > burstTime[j + 1]) {
                 swap(&burstTime[j], &burstTime[j + 1]);
@@ -44,7 +44,7 @@ void findavgTime( int processes[], int n, int bt[]) {
     for (int i=0; i<n; i++) {
         total_wt = total_wt + wt[i];
         total_tat = total_tat + tat[i];
-        printf(" %d   \t\t  %d \t\t %d  \t\t\t  %d\n",i+1,bt[i],wt[i],tat[i]);
+        printf(" %d \t\t %d \t  %d \t\t %d\n",i+1,bt[i],wt[i],tat[i]);
     }
 
     printf("Average waiting time = %.2f\n", (float)total_wt / (float)n);

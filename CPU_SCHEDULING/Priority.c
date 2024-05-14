@@ -6,7 +6,7 @@ int waiting_time[MAX], turnaround_time[MAX], completion_time[MAX];
 int n; // Number of processes
 
 void calculateSchedulingParameters() {
-    int time = 0, NoP = n, LAT = 0, MAX_P = 0;
+    int time = 0, NoP = n, LAT = 0, MAX_P = 0;  //NoP = no of process   LAT = least Arival Time
     int PPt[MAX], ATt[MAX];
     int total_waiting_time = 0, total_turnaround_time = 0;
     
